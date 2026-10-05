@@ -46,7 +46,7 @@ taskflow-api/
 ### 1. Clonar e criar o ambiente virtual
 
 ```bash
-git clone https://github.com/SEU_USUARIO/taskflow-api.git
+git clone (https://github.com/edumelob/TaskFlow-API)
 cd taskflow-api
 python -m venv venv
 source venv/bin/activate      # Windows: venv\Scripts\activate
