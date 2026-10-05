@@ -1,0 +1,13 @@
+services:
+  api:
+    build: .
+    container_name: taskflow-api
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./taskflow.db
+      - SECRET_KEY=${SECRET_KEY:-troque-por-uma-chave-secreta-forte}
+      - ALGORITHM=HS256
+      - ACCESS_TOKEN_EXPIRE_MINUTES=30
+    volumes:
+      - ./data:/app/data
